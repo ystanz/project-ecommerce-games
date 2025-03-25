@@ -1,6 +1,6 @@
 import { HeaderBar, Links, LinksCart, LinksItem } from './styles'
 import logo from '../../assets/images/logo.svg'
-import cart from '../../assets/images/carrinho.svg'
+import cartIcon from '../../assets/images/carrinho.svg'
 
 const Header = () => {
   return (
@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <LinksCart href="#">
         0 - produto(s)
-        <img src={cart} alt="Ícone de carrinho de compras" />
+        <img src={cartIcon} alt="Ícone de carrinho de compras" />
       </LinksCart>
     </HeaderBar>
   )

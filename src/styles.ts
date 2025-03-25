@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   white: '#EEE',
@@ -26,12 +26,12 @@ const GlobalCss = createGlobalStyle`
     font-size: 1.6rem;
     padding-top: 4rem;
   }
-`
 
-export const Container = styled.div`
-  max-width: 102.4rem;
-  width: 100%;
-  margin: 0 auto;
+  .centralizer {
+    max-width: 102.4rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 `
 
 export default GlobalCss

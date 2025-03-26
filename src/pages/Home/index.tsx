@@ -50,7 +50,7 @@ const promotions: Game[] = [
   }
 ]
 
-const emBreve: Game[] = [
+const soon: Game[] = [
   {
     id: 5,
     title: 'Diablo 4',
@@ -98,7 +98,7 @@ const Home = () => {
     <>
       <Banner />
       <ProductsList games={promotions} title="Promoções" background="gray" />
-      <ProductsList games={emBreve} title="Em breve" background="black" />
+      <ProductsList games={soon} title="Em breve" background="black" />
     </>
   )
 }

@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <HeaderBar>
       <div>
-        <img src={logo} alt="Logo da loja EPlay" />
+        <Link to="/">
+          <img src={logo} alt="Logo da loja EPlay" />
+        </Link>
         <nav>
           <Links>
             <LinksItem>

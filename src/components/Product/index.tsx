@@ -1,19 +1,35 @@
 import Tag from '../Tag'
-import { Card, Description, Title } from './styles'
+import { Card, Description, Infos, Title } from './styles'
 
-const Product = () => {
+type Props = {
+  title: string
+  category: string
+  system: string
+  description: string
+  infos: string[]
+  image: string
+}
+
+const Product = ({
+  category,
+  description,
+  image,
+  infos,
+  system,
+  title
+}: Props) => {
   return (
     <Card>
-      <img src="//placehold.co/222x250" alt="" />
-      <Title>Nome do Jogo</Title>
-      <Tag>Categoria</Tag>
-      <Tag>Windows</Tag>
-      <Description>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae eum
-        maiores odit provident aut eaque iusto iste voluptatum necessitatibus
-        dolores quo repellat suscipit, expedita sint reprehenderit voluptate
-        quod? Fuga, error!
-      </Description>
+      <img src={image} alt={title} />
+      <Infos>
+        {infos.map((info) => (
+          <Tag key={info}>{info}</Tag>
+        ))}
+      </Infos>
+      <Title>{title}</Title>
+      <Tag>{category}</Tag>
+      <Tag>{system}</Tag>
+      <Description>{description}</Description>
     </Card>
   )
 }

@@ -29,7 +29,7 @@ export const Banner = styled.div`
     margin-right: 8px;
   }
 
-  .container {
+  .centralizer {
     position: relative;
     z-index: 1;
     display: flex;

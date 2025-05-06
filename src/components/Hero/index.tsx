@@ -6,7 +6,7 @@ import { Banner, Infos } from './styles'
 const Hero = () => {
   return (
     <Banner style={{ backgroundImage: `url(${banner})` }}>
-      <div className="container">
+      <div className="centralizer">
         <div>
           <Tag>RPG</Tag>
           <Tag>PS5</Tag>

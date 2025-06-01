@@ -19,7 +19,7 @@ export const ProductsListContainer = styled.section<
 export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 2.4rem;
+  gap: 2.4rem;
   margin-top: 4rem;
 `
 

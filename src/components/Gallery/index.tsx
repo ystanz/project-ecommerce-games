@@ -1,15 +1,15 @@
 import { useState } from 'react'
+
 import Section from '../Section'
+import { GalleryItem } from '../../pages/Home'
+
 import { Action, Item, Items, Modal, ModalContent } from './styles'
+
 import hogwarts from '../../assets/images/hogwarts-legacy.png'
+
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import close from '../../assets/images/close.png'
-
-interface GalleryItem {
-  type: 'image' | 'video'
-  url: string
-}
 
 type Props = {
   defaultCover: string
